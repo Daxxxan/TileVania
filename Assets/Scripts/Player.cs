@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] float runSpeed = 5f;
+    [SerializeField] float runSpeed = 8f;
+    [SerializeField] float jumpSpeed = 28f;
 
     Rigidbody2D playerRigidbody;
     Animator playerAnimator;
+    Collider2D playerCollider;
 
     bool isAlive = true;
 
@@ -15,12 +17,14 @@ public class Player : MonoBehaviour
     {
         playerRigidbody = GetComponent<Rigidbody2D>();
         playerAnimator = GetComponent<Animator>();
+        playerCollider = GetComponent<Collider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
         Run();
+        Jump();
         SplitSprite();
     }
 
@@ -38,6 +42,15 @@ public class Player : MonoBehaviour
         if(IsRunning())
         {
             transform.localScale = new Vector2(Mathf.Sign(playerRigidbody.velocity.x), 1f);
+        }
+    }
+
+    private void Jump()
+    {
+        if(Input.GetButtonDown("Jump") && playerCollider.IsTouchingLayers(LayerMask.GetMask("Ground")))
+        {
+            Vector2 jumpVelocityToAdd = new Vector2(0f, jumpSpeed);
+            playerRigidbody.velocity += jumpVelocityToAdd;
         }
     }
 
