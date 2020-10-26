@@ -43,11 +43,6 @@ public class Player : MonoBehaviour
 
     private bool IsRunning()
     {
-        bool playerHasHorizontalSpeed = Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
-        if(playerHasHorizontalSpeed)
-        {
-            return true;
-        }
-        return false;
+        return Mathf.Abs(playerRigidbody.velocity.x) > Mathf.Epsilon;
     }
 }
