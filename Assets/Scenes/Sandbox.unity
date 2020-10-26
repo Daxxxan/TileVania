@@ -255,53 +255,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 9136219183462645454}
   m_PrefabAsset: {fileID: 0}
---- !u!61 &1510194265
-BoxCollider2D:
+--- !u!114 &1510194262
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1510194261}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 0.8125}
-    newSize: {x: 0.75, y: 0.875}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 0.6875, y: 0.8125}
-  m_EdgeRadius: 0
---- !u!50 &1510194266
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1510194261}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d617f8cfe50842b40a4278fb0a8ffbbc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1806969042
 GameObject:
   m_ObjectHideFlags: 0
@@ -1894,7 +1859,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1806969042}
-  m_BodyType: 0
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -4307,12 +4272,12 @@ PrefabInstance:
     - target: {fileID: 9136219184704111257, guid: 98f3cd9b553f68f4fb746cdfa654c7b4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.44
+      value: 0.48
       objectReference: {fileID: 0}
     - target: {fileID: 9136219184704111257, guid: 98f3cd9b553f68f4fb746cdfa654c7b4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.29
+      value: 1.82
       objectReference: {fileID: 0}
     - target: {fileID: 9136219184704111257, guid: 98f3cd9b553f68f4fb746cdfa654c7b4,
         type: 3}
