@@ -12781,11 +12781,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cameras
       objectReference: {fileID: 0}
-    - target: {fileID: 7778789586866675944, guid: 1cff761a87b421f428027bd4158c27bc,
-        type: 3}
-      propertyPath: orthographic size
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 7778789587106953668, guid: 1cff761a87b421f428027bd4158c27bc,
         type: 3}
       propertyPath: m_BoundingShape2D
@@ -12815,18 +12810,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1510194262, guid: 98f3cd9b553f68f4fb746cdfa654c7b4, type: 3}
-      propertyPath: jumpSpeed
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510194262, guid: 98f3cd9b553f68f4fb746cdfa654c7b4, type: 3}
-      propertyPath: runSpeed
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1510194266, guid: 98f3cd9b553f68f4fb746cdfa654c7b4, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9136219184704111257, guid: 98f3cd9b553f68f4fb746cdfa654c7b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12886,11 +12869,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 9136219184704111259, guid: 98f3cd9b553f68f4fb746cdfa654c7b4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98f3cd9b553f68f4fb746cdfa654c7b4, type: 3}
